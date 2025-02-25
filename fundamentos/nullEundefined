@@ -1,0 +1,22 @@
+let valor // variável sem valor atribuido porem ainda é uma variável
+console.log(valor)
+
+valor = null // ausência de valor, ou seja, vazia
+console.log(valor)
+// console.log(valor.toString()) // Erro!
+
+const produto = {}
+console.log(produto.preco)
+console.log(produto)
+
+produto.preco = 3.50
+console.log(produto)
+
+produto.preco = null // null, evite atribuir undefined
+console.log(!!produto.preco)
+// delete produto.preco
+console.log(produto)
+
+produto.preco = null // esse produto está sem preço
+console.log(!!produto.preco)
+console.log(produto) 
